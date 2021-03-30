@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uikit-3.6.17/css/uikit.min.css" />
+    <script src="uikit-3.6.17/js/uikit.min.js"></script>
+    <script src="uikit-3.6.17/js/uikit-icons.min.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <script src="bundle.js"></script>
+
+    <header>
+        <nav id="controls" class="uk-navbar-container uk-navbar uk-padding-small">
+            <div id="valueControls" class="uk-navbar-left">
+                <div class="uk-margin-small-right">
+                    <label class="uk-label uk-form-label" for="radius">Radius</label>
+                    <input class="uk-input uk-form-width-small" id="radius" type="number" value="50">
+                </div>
+                <div class="uk-margin-small-right">
+                    <label class="uk-label uk-form-label" for="nodeValue">Node value</label>
+                    <input class="uk-input uk-form-width-medium" id="nodeValue" type="text" value="<autoincrement>">
+                </div>
+                <div class="uk-margin-small-right">
+                    <label class="uk-label uk-form-label" for="edgeValue">Edge value</label>
+                    <input class="uk-input uk-form-width-medium" id="edgeValue" type="text" value="">
+                </div>
+                <div class="uk-flex" style="border: 1px solid black">
+                    <div class="uk-label">Mode</div>
+                    <div>
+                        <label class="uk-form-label" for="add">Add</label>
+                        <input class="uk-radio" type="radio" id="add" name="mode" value="add" checked>
+    
+                        <label class="uk-form-label" for="delete">Delete</label>
+                        <input class="uk-radio" type="radio" id="delete" name="mode" value="delete">
+                    </div>
+                </div>
+            </div>
+            <div id="exportControls" class="uk-navbar-right">
+                <button class="uk-button uk-button-primary" id="exportButton">Copy to clipboard as json</button>
+            </div>
+        </nav>
+    </header>
+    <canvas id="canvas"></canvas>
+</body>
+</html>
